@@ -1,0 +1,238 @@
+:root {
+    --primary: #ff6a3e;
+    --primaryLight: #ffba43;
+    --secondary: #ffba43;
+    --secondaryLight: #ffba43;
+    --headerColor: #1a1a1a;
+    --bodyTextColor: #4e4b66;
+    --bodyTextColorWhite: #fafbfc;
+    /* 13px - 16px */
+    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+    /* 31px - 49px */
+    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --bodyFontSize: 1rem;
+    /* 60px - 100px top and bottom */
+    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    position: fixed;
+    background: #181818;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    display: block;
+}
+
+
+.cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 43.75rem;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    position: relative;
+}
+
+.cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0;
+    color: var(--bodyTextColor);
+}
+                            
+/*-- -------------------------- -->
+<---          Footer            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #cs-footer-269 {
+        padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+        background-color: #1a1a1a;
+    }
+    #cs-footer-269 .cs-container {
+        width: 100%;
+        max-width: 34.375rem;
+        margin: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        column-gap: clamp(4.25rem, calc(10%), 6.25rem);
+    }
+    #cs-footer-269 .cs-logo-group {
+        width: 100%;
+        position: relative;
+    }
+    #cs-footer-269 .cs-logo {
+        width: clamp(13.125rem, 8vw, 15rem);
+        height: auto;
+        display: block;
+        margin-bottom: clamp(1.75rem, 4.17vw, 2.75rem);
+    }
+    #cs-footer-269 .cs-logo-img {
+        width: 100%;
+        height: auto;
+    }
+    #cs-footer-269 .cs-text {
+        font-size: clamp(0.875rem, 2.5vw, 1rem);
+        line-height: 1.5em;
+        margin: 0;
+        margin-bottom: 2rem;
+        max-width: 33.75rem;
+        color: var(--bodyTextColorWhite);
+    }
+    #cs-footer-269 .cs-nav {
+        padding: 0;
+        margin: 0;
+    }
+    #cs-footer-269 .cs-nav-li {
+        list-style: none;
+        line-height: 1.5em;
+        margin-bottom: 0.5rem;
+    }
+    #cs-footer-269 .cs-nav-li:last-of-type {
+        margin-bottom: 0;
+    }
+    #cs-footer-269 .cs-header {
+        font-size: 1rem;
+        line-height: 1.5em;
+        font-weight: 700;
+        margin-bottom: 0.875rem;
+        color: var(--bodyTextColorWhite);
+        position: relative;
+        display: block;
+    }
+    #cs-footer-269 .cs-nav-link {
+        font-size: 1rem;
+        text-decoration: none;
+        line-height: 1.5em;
+        color: var(--bodyTextColorWhite);
+        position: relative;
+    }
+    #cs-footer-269 .cs-nav-link:before {
+        /* underline */
+        content: "";
+        width: 0%;
+        height: 0.125rem;
+        background: currentColor;
+        opacity: 1;
+        position: absolute;
+        display: block;
+        bottom: -0.125rem;
+        left: 0;
+        transition: width 0.3s;
+    }
+    
+    #cs-footer-269 .cs-nav-link:hover:before {
+        width: 100%;
+    }
+    #cs-footer-269 .cs-contact {
+        margin: 0;
+        padding: 0;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-self: stretch;
+    }
+    #cs-footer-269 .cs-contact-li {
+        list-style: none;
+        margin-bottom: 0rem;
+    }
+    #cs-footer-269 .cs-contact-li:last-of-type {
+        margin-bottom: 0;
+    }
+    #cs-footer-269 .cs-contact-link {
+        font-size: 1rem;
+        text-decoration: none;
+        line-height: 1.5em;
+        text-align: left;
+        color: var(--bodyTextColorWhite);
+        display: inline-block;
+    }
+    #cs-footer-269 .cs-contact-link:hover {
+        text-decoration: underline;
+    }
+    #cs-footer-269 .cs-address {
+        font-size: 1rem;
+        margin-bottom: 1.25rem;
+    }
+    #cs-footer-269 .cs-social-group {
+        margin-top: auto;
+        margin-left: auto;
+    }
+    #cs-footer-269 .cs-social {
+        display: inline-flex;
+        justify-content: left;
+        gap: 0.85rem;
+    }
+    #cs-footer-269 .cs-social-link {
+        width: 1.6rem;
+        height: 1.6rem;
+        background-color: #4e4b66;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        transition:
+            transform 0.3s,
+            background-color 0.3s;
+    }
+    #cs-footer-269 .cs-social-link:hover {
+        background-color: var(--primary);
+        transform: translateY(-0.1875rem);
+    }
+    #cs-footer-269 .cs-social-img {
+        height: 0.9125rem;
+        width: auto;
+        display: block;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #cs-footer-269 .cs-container {
+        max-width: 70rem;
+        row-gap: 0;
+    }
+    #cs-footer-269 .cs-logo-group {
+        width: auto;
+        margin-right: auto;
+    }
+    #cs-footer-269 .cs-text {
+        width: 100%;
+        max-width: 29.0625rem;
+        margin: 0;
+    }
+    #cs-footer-269 .cs-nav,
+    #cs-footer-269 .cs-contact {
+        margin-top: clamp(0.5rem, 1.2vw, 0.75rem);
+    }
+}                          
